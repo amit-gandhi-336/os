@@ -36,3 +36,5 @@ int main(){
 
     return 0;
 }
+
+gcc file.c -pthread -o output

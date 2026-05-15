@@ -16,3 +16,7 @@ int main(){
     
     return 0;
 }
+
+gcc -c complex.c → ar rcs libcomplex.a complex.o → gcc test.c -L. -lcomplex -o test
+
+gcc -fPIC -shared -o libmath.so math.c → gcc test.c -L. -lmath -Wl,-rpath,. -o test
